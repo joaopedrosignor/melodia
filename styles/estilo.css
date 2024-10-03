@@ -1,0 +1,146 @@
+* {
+  font-family: "Fredoka", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+header {
+  background-color: black; }
+  header .logo a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 1.6rem;
+    font-weight: 500; }
+  header ul {
+    list-style: none; }
+  header .navi-link {
+    text-decoration: none !important;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500; }
+    header .navi-link:hover {
+      color: #8B0000; }
+  header .mobile-menu {
+    display: none; }
+    header .mobile-menu-icon {
+      display: none; }
+
+.hero {
+  background: linear-gradient(#202020, black, black); }
+  .hero h1 {
+    font-weight: 600;
+    color: white; }
+  .hero .lead {
+    color: white; }
+  .hero .cta {
+    background-color: #8B0000;
+    border: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border-radius: 50px; }
+    .hero .cta:hover {
+      background-color: #580000; }
+  .hero .app img {
+    opacity: .7;
+    -webkit-mask-image: linear-gradient(to top, transparent 4%, black 80%); }
+
+.infos {
+  background-color: black; }
+  .infos .card {
+    border-radius: 10px; }
+    .infos .card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    .infos .card-body {
+      background-color: #202020;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: white; }
+      .infos .card-body p {
+        font-size: 1.3rem; }
+
+.planos {
+  background: #131313; }
+  .planos .titulo {
+    color: white;
+    font-weight: bold; }
+  .planos .card {
+    background: none;
+    border-color: #8B0000;
+    border-radius: 20px; }
+    .planos .card-header {
+      border-bottom: none;
+      background-color: none !important; }
+      .planos .card-header h4 {
+        color: #8B0000;
+        font-weight: bold !important; }
+    .planos .card-body {
+      color: white; }
+      .planos .card-body button {
+        background-color: #8B0000;
+        border-radius: 50px; }
+        .planos .card-body button:hover {
+          background-color: #580000; }
+      .planos .card-body ul {
+        font-size: 1.1rem; }
+
+.depoimentos {
+  background: linear-gradient(#131313, #131313, black); }
+  .depoimentos .titulo {
+    font-weight: bold;
+    color: white; }
+  .depoimentos .card {
+    border-radius: 15px;
+    border-color: black;
+    background: radial-gradient(#202020, #070707);
+    color: white; }
+    .depoimentos .card img {
+      border-radius: 50%; }
+    .depoimentos .card h5 {
+      color: #8B0000; }
+    .depoimentos .card-text {
+      font-size: 1.3rem; }
+
+.contato {
+  background-color: black; }
+  .contato h1, .contato label {
+    color: white; }
+  .contato input, .contato textarea {
+    background: none; }
+    .contato input:focus, .contato textarea:focus {
+      background: none;
+      border-color: #8B0000;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .contato button {
+    background-color: #8B0000;
+    border-radius: 50px; }
+    .contato button:hover {
+      background-color: #580000; }
+
+footer {
+  background-color: black; }
+
+@media (max-width: 1200px) {
+  .hero .melodia {
+    align-items: center;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 0 !important; }
+  .navi-item {
+    display: none; }
+  .mobile-menu-icon {
+    display: block !important; }
+    .mobile-menu-icon button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer; }
+  .mobile-menu .navi-item {
+    display: block; }
+  .open {
+    display: block !important; } }

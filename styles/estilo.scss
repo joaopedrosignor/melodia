@@ -1,0 +1,201 @@
+$cor-primaria: #8B0000;
+$body-color: rgb(32, 32, 32);
+$navfont: 1.3rem;
+*{
+    font-family: "Fredoka", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    background-color:black;
+    .logo a{
+        color: white !important;
+        text-decoration:none!important;
+        font-size:1.6rem;
+        font-weight: 500;
+    }
+    ul{
+        list-style: none;
+    }
+    .navi-link{
+        text-decoration: none !important;
+        font-size: $navfont;
+        color: white;
+        font-weight: 500;
+        &:hover{
+            color: $cor-primaria;
+        }
+    }
+    .mobile-menu{
+        display: none;
+        &-icon{
+            display: none;
+        }
+    }
+}
+
+.hero{
+    h1{
+        font-weight:600;
+        color: white;
+    }
+    .lead{
+        color:white;
+    }
+    .cta{
+        background-color: $cor-primaria;
+        border: none;
+        font-weight:500;
+        font-size: 1.3rem;
+        border-radius: 50px;
+        &:hover{
+            background-color:darken($cor-primaria, 10%);
+        }
+    }
+    .app img{
+        opacity:.7;
+        -webkit-mask-image: linear-gradient(to top, transparent 4%,black 80%);
+    }
+    background:linear-gradient(rgb(32, 32, 32),black,black);
+}
+
+.infos{
+    background-color: black;
+    .card{
+        border-radius: 10px;
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        &-body{
+            background-color: $body-color;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            color: white;
+            p{
+                font-size: $navfont;
+            }
+        }
+    }
+}
+
+.planos{
+    background:darken($body-color,5%);
+    .titulo{
+        color:white;
+        font-weight:bold;
+    }
+    .card{
+        // align-items: start;
+        &-header{
+            border-bottom: none;
+            background-color: none!important;
+            h4{
+                color: $cor-primaria;
+                font-weight: bold!important;
+            }
+        }
+        &-body{
+            color:white;
+            button{
+                background-color: $cor-primaria;
+                border-radius: 50px;
+                &:hover{
+                    background-color:darken($cor-primaria, 10%);
+                }
+            }
+            ul{
+                font-size:1.1rem;
+            }
+        }
+        background:none;
+        border-color:$cor-primaria;
+        border-radius: 20px;
+    }
+}
+
+.depoimentos{
+    background: linear-gradient(darken($body-color,5%),darken($body-color,5%),black );  
+    .titulo{
+        font-weight: bold;
+        color: white;
+    }
+    .card{
+        border-radius: 15px;
+        border-color: black;
+        img{
+            border-radius: 50%;
+        }
+        background: radial-gradient($body-color,darken($body-color,10%));
+        color: white;
+        h5{
+            color: $cor-primaria;
+        }
+        &-text{
+            font-size: $navfont;
+        }
+    }
+}
+
+.contato{
+    background-color: black;
+    h1, label{
+        color:white;
+    }
+    input, textarea{
+        background: none;
+        &:focus{
+            background: none;
+            border-color: $cor-primaria;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+    button{
+        background-color: $cor-primaria;
+        border-radius: 50px;
+        &:hover{
+            background-color:darken($cor-primaria, 10%);
+        }
+    }
+}
+
+footer{
+    background-color: black;
+}
+@media (max-width: 1200px) {
+    .hero{
+        .melodia{
+            align-items: center;
+            text-align:center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .logo{
+        margin-left: 0 !important;
+    }
+    .navi-item{
+        display: none;
+    }
+    .mobile-menu{
+        &-icon{
+            display: block!important;
+            button{
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+        .navi-item{
+            display: block;
+        }
+    }
+    .open{
+        display: block !important;
+    }
+}

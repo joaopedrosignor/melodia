@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodia</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="img/logos/ico/logo_preto.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navi-bar d-flex py-3 ">
+            <div class="logo d-flex align-items-center ml-5 justify-content-center">
+                <a href="#">
+                    <img src="img/logos/logo_branco.png">
+                    Melodia
+                </a>
+            </div>
+            <div class="navi-list d-flex align-items-center ml-auto mr-5">
+                <ul class="d-flex justify-content-center my-auto px-0">
+                    <li class="navi-item mx-3"><a href="#apresentacao" class="navi-link">Apresentação</a></li>
+                    <li class="navi-item mx-3"><a href="#planos" class="navi-link">Planos</a></li>
+                    <li class="navi-item mx-3"><a href="#depoimentos" class="navi-link">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="hamb" src="img/menu/menu.png" style="width: 40px; height: auto;">
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu pl-4">
+            <ul class="d-flex flex-column px-0 pb-1 mb-0">
+                <li class="navi-item "><a href="#apresentacao" class="navi-link">Apresentação</a></li>
+                <li class="navi-item "><a href="#planos" class="navi-link">Planos</a></li>
+                <li class="navi-item "><a href="#depoimentos" class="navi-link">Depoimentos</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero py-5 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="melodia col-xl-6 py-5 d-flex flex-column justify-content-center">
+                    <h1>Melodia: Sua Música, Sua Forma</h1>
+                    <p class="lead">Descubra a melodia perfeita para cada momento. Sua trilha sonora, seu
+                        estilo.</p>
+                    <p>
+                        <a href="#" class="cta btn btn-danger my-2 py-2 px-4">Ouvir Agora</a>
+                    </p>
+                </div>
+                <div class="app col-xl-6 d-flex justify-content-center">
+                    <img src="img/App/aplicativo-removebg-preview.png" class="col-12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infos py-5" id="apresentacao">
+        <div class="album py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 py-1">
+                        <div class="card mb-4 h-100">
+                            <img src="img/infos/offline.jpg">
+                            <div class="card-body py-5">
+                                <h3 class="card-text pb-1">Modo Offline</h3>
+                                <p class="card-text">Sua melodia, em qualquer hora, em qualquer lugar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-1">
+                        <div class="card mb-4 h-100">
+                            <img src="img/infos/som.jpg">
+                            <div class="card-body py-5">
+                                <h3 class="card-text pb-1">Sua melodia detalhada</h3>
+                                <p class="card-text">A melhor qualidade sonora disponível para você.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-1">
+                        <div class="card mb-4 h-100">
+                            <img src="img/infos/mix.png">
+                            <div class="card-body py-5">
+                                <h3 class="card-text pb-1">Cansado da mesmice?</h3>
+                                <p class="card-text">Misture suas playlists, artistas, albuns e gêneros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="planos pb-5" id="planos">
+        <div class="container py-5">
+            <h1 class="display-4 text-center titulo py-5">O melhor plano pra você</h1>
+            <div class="row d-flex justify-content-center">
+    
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Individual</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pricing-card-title">R$21,90 <small>/ mês</small></h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Som poderoso, do seu jeito</li>
+                                <li>Mais de 150 milhões de faixas</li>
+                                <li>Ouça off-line e sem anúncios</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-danger">Assine já</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Família</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pricing-card-title">R$34,90 <small>/ mês</small></h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Música para toda a família</li>
+                                <li>Mais de 150 milhões de faixas</li>
+                                <li>Ouça off-line e sem anúncios</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-danger">Assine já</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Estudante</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pricing-card-title">R$10,90 <small>/ mês</small></h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Desconto para estudantes</li>
+                                <li>Mais de 150 milhões de faixas</li>
+                                <li>Ouça off-line e sem anúncios</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-danger">Assine já</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section class="depoimentos py-5" id="depoimentos">
+        <div class="album py-5">
+            <div class="container">
+                <h1 class="text-center titulo">Depoimentos</h1>
+                <div class="row">
+                    <div class="col-md-4 py-1">
+                        <div class="card mb-4  text-center">
+                            <div class="align-items-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="col-10 pt-3">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-text pb-1">Sandra Castro</h3>
+                                <h5 class="card-text pb-1">Web Developer</h5>
+                                <p class="card-text">"A interface é intuitiva e fácil de navegar."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-1">
+                        <div class="card mb-4  text-center">
+                            <div class="align-items-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="col-10 pt-3">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-text pb-1">Gabriela Silva</h3>
+                                <h5 class="card-text pb-1">Dentista</h5>
+                                <p class="card-text">"A biblioteca de músicas é vasta e variada."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-1">
+                        <div class="card mb-4  text-center">
+                            <div class="align-items-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="col-10 pt-3">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-text pb-1">Pedro Santos</h3>
+                                <h5 class="card-text pb-1">Músico</h5>
+                                <p class="card-text">"A qualidade do som é excelente e imersiva."</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contato py-5">
+        <h1 class="text-center display-4">Fale Conosco</h1>
+        <div class="row justify-content-center">
+            <form class="col-md-4 col-10">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Mensagem</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem..."></textarea>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-danger">Enviar</button>
+            </form>
+        </div>
+    </section> -->
+    
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Logo da marca à esquerda -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="img/logos/logo.png" alt="Logo da Marca" class="logo mr-3" style="max-width: 150px;"> <!-- Substitua "logo.png" pelo caminho da sua logo -->
+                    <span>© 2024 Melodia</span>
+                </div>
+    
+                <!-- Link para políticas e redes sociais à direita -->
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <a href="#" class="text-white mr-3">Termos</a>
+                    <a href="#" class="text-white mr-3">Contato</a>
+                    <a href="#" class="text-white mr-2">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-white mr-2">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
