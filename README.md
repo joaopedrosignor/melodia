@@ -1,3 +1,14 @@
+# FrontCP5
+# Integrantes
+
+Rm 556714 Gabriel Lacerda
+
+Rm 557230 Roger Cardoso
+
+Rm 558375 Joao Pedro Signor
+
+Rm 557065 Vinicius Augusto
+
 # Melodia
 
 Melodia é uma aplicação web que proporciona uma experiência musical personalizada, permitindo que os usuários descubram e ouçam suas músicas favoritas em qualquer lugar. Este projeto foi desenvolvido com HTML, CSS (SCSS) e Bootstrap, garantindo uma interface responsiva e atraente.
